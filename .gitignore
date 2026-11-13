@@ -1,0 +1,15 @@
+.gradle/
+.gradle-user-home/
+.toolchain/
+**/build/
+build/
+local.properties
+.idea/
+*.iml
+*.jks
+*.keystore
+__pycache__/
+dist/
+*.idsig
+.DS_Store
+Thumbs.db

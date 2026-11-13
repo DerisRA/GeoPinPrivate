@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GeoPin Probe</string>
+    <string name="readout_idle">Belum ada pembacaan.</string>
+    <string name="action_start">Mulai pantau</string>
+    <string name="action_stop">Berhenti</string>
+    <string name="action_last_known">Baca lokasi terakhir</string>
+    <string name="permission_denied">Izin lokasi ditolak; pembacaan tidak bisa dilakukan.</string>
+    <string name="note">Aplikasi ini hanya membaca lokasi. Bandingkan hasilnya dengan koordinat yang Anda set di controller.</string>
+</resources>

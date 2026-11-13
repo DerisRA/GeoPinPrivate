@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calibrator</string>
+    <string name="xposed_description">Menetapkan satu titik GPS diam untuk aplikasi yang dipilih di LSPosed.</string>
+
+    <string name="status_module_missing">Modul belum aktif di LSPosed</string>
+    <string name="status_module_active">Modul aktif di LSPosed</string>
+    <string name="status_pin_on">Titik diam AKTIF</string>
+    <string name="status_pin_off">Titik diam nonaktif</string>
+
+    <string name="hint_coordinate">Latitude, Longitude</string>
+    <string name="action_apply_coordinate">Terapkan</string>
+    <string name="action_toggle_on">Aktifkan Titik</string>
+    <string name="action_toggle_off">Matikan Titik</string>
+    <string name="action_save_favorite">Simpan Favorit</string>
+    <string name="action_open_map">Pilih di Peta</string>
+    <string name="action_close_map">Tutup Peta</string>
+
+    <string name="label_altitude">Ketinggian (m)</string>
+    <string name="label_bearing">Bearing (°)</string>
+    <string name="label_scope">Paket yang diizinkan</string>
+    <string name="hint_scope">dev.geopin.probe, com.contoh.aplikasi</string>
+    <string name="action_save_scope">Simpan Cakupan</string>
+
+    <string name="favorites_title">Favorit</string>
+    <string name="favorites_empty">Belum ada favorit. Simpan titik dari tombol di atas.</string>
+    <string name="scope_hint_note">Aplikasi tetap harus dicentang di LSPosed Manager; daftar ini hanya lapisan kedua.</string>
+
+    <string name="pin_status_title">Status titik</string>
+    <string name="module_status_title">Status modul</string>
+    <string name="dialog_favorite_name">Nama favorit</string>
+    <string name="dialog_delete_title">Hapus favorit?</string>
+    <string name="warning_module_inactive">Modul belum aktif di proses ini. Aktifkan modul di LSPosed Manager, lalu centang juga Calibrator agar status ini terbaca.</string>
+    <string name="toast_config_saved">Konfigurasi disimpan</string>
+    <string name="toast_scope_saved">Cakupan disimpan</string>
+    <string name="toast_favorite_saved">Favorit disimpan</string>
+    <string name="toast_favorite_deleted">Favorit dihapus</string>
+    <string name="toast_no_coordinate">Isi koordinat dulu</string>
+    <string name="toast_invalid_input">Periksa kembali koordinat, ketinggian, dan bearing</string>
+    <string name="map_hint">Ketuk peta untuk menaruh pin, cubit untuk zoom.</string>
+</resources>

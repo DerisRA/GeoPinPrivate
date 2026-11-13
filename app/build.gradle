@@ -1,0 +1,40 @@
+plugins { id 'com.android.application' }
+
+// applicationId sekaligus menjadi nama paket modul yang dibaca hook lewat BuildConfig.APPLICATION_ID.
+// Ganti lewat -PgeopinApplicationId=... tanpa menyentuh kode.
+def pinId = providers.gradleProperty('geopinApplicationId').getOrElse('dev.geopin.privatepin')
+if (!(pinId ==~ /[A-Za-z][A-Za-z0-9_]*(\.[A-Za-z][A-Za-z0-9_]*)+/)) {
+    throw new GradleException('geopinApplicationId must be a valid dotted Android applicationId')
+}
+
+android {
+    namespace 'dev.geopin.app'
+    compileSdk 35
+    defaultConfig {
+        applicationId pinId
+        minSdk 29
+        targetSdk 30
+        versionCode 1
+        versionName '0.1.0'
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    buildFeatures { buildConfig true }
+    buildTypes {
+        debug { minifyEnabled false }
+        release { minifyEnabled false }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lint { abortOnError true }
+}
+
+dependencies {
+    implementation project(':core')
+    compileOnly 'de.robv.android.xposed:api:82'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.6.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test:core:1.6.1'
+}

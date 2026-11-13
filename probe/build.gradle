@@ -1,0 +1,20 @@
+plugins { id 'com.android.application' }
+
+// Probe sengaja hanya memakai LocationManager framework: tidak ada dependensi GMS,
+// jadi APK-nya kecil dan bisa dibangun tanpa mengunduh artefak Google.
+android {
+    namespace 'dev.geopin.probe'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'dev.geopin.probe'
+        minSdk 29
+        targetSdk 30
+        versionCode 1
+        versionName '0.1.0'
+    }
+    buildTypes { release { minifyEnabled false } }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}

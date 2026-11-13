@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://github.com/LSPosed/LSPosed/wiki/New-XSharedPreferences",
+      "title": "",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 2,
+      "url": "https://github.com/LSPosed/LSPosed/wiki/Develop-Xposed-Modules-Using-Modern-Xposed-API",
+      "title": "",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 3,
+      "url": "https://github.com/osmdroid/osmdroid",
+      "title": "",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 4,
+      "url": "https://operations.osmfoundation.org/policies/tiles",
+      "title": "",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 5,
+      "url": "https://developer.android.com/training/package-visibility",
+      "title": "",
+      "accessed": "2026-10-31"
+    },
+    {
+      "id": 6,
+      "url": "https://developer.android.com/build/releases/past-releases/agp-8-7-0-release-notes",
+      "title": "",
+      "accessed": "2026-10-31"
+    }
+  ]
+}
